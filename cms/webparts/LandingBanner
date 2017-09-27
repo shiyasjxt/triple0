@@ -1,0 +1,77 @@
+<section class="landing-title">
+    <div class="container">
+        <div class="row">
+            <div class="large-7 columns landing-banner">
+                <!-- -->
+            </div>
+            <div class="large-7 columns">
+                <!-- First Name -->
+                <div class="form-group">
+                    <label for="firstname">FIRST NAME <span class="required">*</span></label>
+                    <input class="reqfield" id="firstname" aria-required="true" name="firstname" type="text" tabindex="1" required>
+                    <small class="error-msg hidden">Please enter your first name.</small>
+                </div>
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="lastname">LAST NAME <span class="required">*</span></label>
+                    <input class="reqfield" id="surname" required aria-required="true" name="lastname" type="text" tabindex="2">
+                    <small class="error-msg hidden">Please enter your Last name.</small>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS <span class="required">*</span></label>
+                    <input class="reqfield" id="email" required aria-required="true" name="email" type="email" tabindex="3">
+                    <small class="error-msg  hidden">Please enter your email address.</small>
+                </div>
+                <!-- Location -->
+                <div class="form-group">
+                    <label for="location">I CURRENTLY LIVE IN <span class="required">*</span></label>
+                    <select class="reqfield" required aria-required="true" name="location" placeholder="Select Current Location" tabindex="4" id="location">
+                        <option value="">Select Current Location</option>
+                    </select>
+                    <small class="error-msg hidden">Please enter select a location.</small>
+                </div>
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="mobilePhone">PHONE NUMBER <span class="required">*</span></label>
+                    <input class="reqfield" id="mobilePhone" required aria-required="true" name="mobilePhone" type="text" tabindex="5">
+                    <small class="error-msg hidden">Please enter your phone number.</small>
+                </div>
+                <!-- Doctor Type -->
+                <div class="form-group">
+                    <label for="doctype">DOCTOR TYPE <span class="required">*</span></label>
+                    <select class="reqfield" required aria-required="true" name="doctype" placeholder="Select a Doctor Type" tabindex="6" id="profession">
+                        <option value="" id="profession">Select a Doctor Type</option>
+                        <!-- Other options via ajax -->
+                    </select>
+                    <small class="error-msg hidden">Please enter select a type.</small>
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="createPassword">PASSWORD <span class="required">*</span></label>
+                    <input class="reqfield" id="createPassword" required aria-required="true" name="createPassword" type="password" tabindex="7">
+                    <small class="error-msg hidden">Please enter your first name.</small>
+                </div>
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="confirmPassword">CONFIRM PASSWORD <span class="required">*</span></label>
+                    <input class="reqfield" id="confirmPassword" required aria-required="true" name="confirmPassword" type="password" tabindex="7">
+                    <small class="error-msg hidden">Please enter your first name.</small>
+                </div>
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button required name="reg_submit" class="reg-submit" id="regSubmit">SEARCH OVER 400 OPPORTUNITIES</button>
+                </div>
+            </div>
+
+			<div class="large-3 colums">
+				<div class="reg-success-msg hidden">
+                    <h3>Hello <span class="mem-name"></span></h3>
+                    <h4>Welcome to Triple0.</h4>
+                    <p>Thank you for registering with us. Please check your email to activate your account and access your membership area.</p>
+                </div>
+			</div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="/media/triple-0/js/custom-register-generator.js?v=2.1"></script>

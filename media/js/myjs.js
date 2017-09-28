@@ -199,6 +199,11 @@
             $('#ctl00_ContentPlaceHolder1_ucJobAlert1_UpdatePanel2 #ctl00_ContentPlaceHolder1_ucJobAlert1_ddlLocation option[value="19"]').insertBefore('#ctl00_ContentPlaceHolder1_ucJobAlert1_UpdatePanel2 #ctl00_ContentPlaceHolder1_ucJobAlert1_ddlLocation option[value="1"]');
             // $('#advanced_search-holder #roleIDs option[value="-1"]').text('- Select a Specialty First -');
         }
+        if(currentURL.indexOf('thank-you-registration?n=1')>-1){
+            var path = window.location.href;
+			var fn = path.split('=')[1];
+			$('h3 .fn').text(fn);
+        }
         //$.getScript('/media/responsive-3/js/include-feed.js', function() {
         //
         //			// Latest Jobs widget

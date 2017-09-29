@@ -1135,6 +1135,33 @@ input[type="email"] {} input[type="image"].form-control {} select.form-dropdown 
 }
 
 /* Custom Registation */
+
+.large-7 .columns .hasError select:focus{
+    box-shadow: inset 0 0 5px #00aeef;
+}
+
+input.hasError, .hasError input,
+.form-group.hasError select{
+	box-shadow: inset 0 0 5px red;
+}
+.form-group.hasError {
+    position: relative;
+    margin-bottom: 23px;
+}
+.form-group.hasError .error-msg {
+    position: absolute;
+    bottom: -22px;
+}
+
+.email-error-msg {
+    background: rgba(240,240,240,0.8);
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    line-height: 1.2;
+    color: #d33!important;
+}
+
+
 @media (min-width: 768px) and (max-width: 991px){
     .landing-banner{
         width: 100%;

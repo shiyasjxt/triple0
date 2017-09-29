@@ -204,6 +204,31 @@
 			var fn = path.split('=')[1];
 			$('h3 .fn').text(fn);
         }
+
+        if(currentURL.indexOf('australian-locum-opportunities')>-1){
+            $(".landing-slogan").html('The team at <span>Triple0 always go the extra mile</span> to ensure being a locum is as easy as possible.');
+            $(".landing-newsletter").find('p').html('No problem, sign up to our locum newsletter to keep informed about all the latest locum news, tips and locum opportunities.');
+            
+        }
+        if(currentURL.indexOf('new-zealand-locum-opportunities')>-1){
+            $(".landing-slogan").html('The team at <span>Triple0 always go the extra mile</span> to ensure being a locum is as easy as possible.');
+            $(".landing-newsletter").find('p').html('No problem, sign up to our locum newsletter to keep informed about all the latest locum news, tips and locum opportunities.');
+            
+        }
+        if(currentURL.indexOf('new-zealand-doctor-opportunities')>-1){
+            $(".landing-slogan").html('The team at <span>Triple0 always go the extra mile</span> to ensure being a doctor is as easy as possible.');
+            $(".landing-newsletter").find('p').html('No problem, sign up to our doctor newsletter to keep informed about all the latest doctor news, tips and doctor opportunities.');
+            
+        }
+        if(currentURL.indexOf('australian-doctor-opportunities')>-1){
+            $(".landing-slogan").html('The team at <span>Triple0 always go the extra mile</span> to ensure being a doctor is as easy as possible.');
+            $(".landing-newsletter").find('p').html('No problem, sign up to our doctor newsletter to keep informed about all the latest doctor news, tips and doctor opportunities.');
+            
+        }
+
+
+
+        
         //$.getScript('/media/responsive-3/js/include-feed.js', function() {
         //
         //			// Latest Jobs widget

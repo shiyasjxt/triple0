@@ -1,5 +1,7 @@
 !(function ($) {
     $(document).ready(function() {
+
+        
         // Pulling Dropdown Values
         var domain = 'https://www.triple0.com';
     
@@ -546,7 +548,8 @@
             //     return false;
             // }
     
-    
+            $(this).parent().addClass('reg-process');
+            
             // Assgin Default Value
             data.append("title", "Mr");
             data.append("emailformat", "1");
@@ -605,6 +608,7 @@
                 processData: false,
                 success: function(msg) {
                     console.log(msg);
+                    $('#regSubmit').parent().removeClass('reg-process');                    
                     var result = $.parseJSON(msg);
                     if( result.Success ){
                         // $('.large-7.columns').hide();
@@ -613,31 +617,26 @@
                         window.location = '/thank-you-registration?n='+firstname;
                         
                     }else{
-                        console.log(result.Error);
+                        // console.log(result.Error);
                         $.each(result.Error, function(j, param) {
                             if( param.Name == "password" ){
                                 $('#createPassword, #confirmPassword').val("");
     
                                 $('#createPassword').focus().removeClass().parent().find('.error-msg').removeClass('hidden');
-                            }else if( param.Name == "email" ){
+                            }else if( param.Name == "email" || param.Name == "username" ){
                                 var errMsg = param.Message;
                                 if( errMsg.indexOf("already exists") >-1 ){
-                                    errMsg += " <br> Or, Login with your existing username.";
+                                    errMsg = "You already have an account with Triple0. Please reset your password if you cannot remember it.";
                                     $('.email-error-msg').removeClass('hidden').find('small').html(errMsg);
+                                    $('#email').parent().addClass('hasError');
                                 }
-                            }
-                            else if( param.Name == "username" ){
-                                var errMsg = param.Message;
-                                if( errMsg.indexOf("already exists") >-1 ){
-                                    $('#username').addClass('hasError').focus();
-                                    $('#username').next('.error-msg').removeClass('hidden').text(errMsg);
-                                }    
                             }
                         });
                     }
                     
                 },
                 fail: function() {
+                    $('#regSubmit').parent().removeClass('reg-process');
                     alert('Registration failed.');
                 }
             });

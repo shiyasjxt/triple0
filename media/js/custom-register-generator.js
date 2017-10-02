@@ -614,7 +614,8 @@
                         // $('.large-7.columns').hide();
                         // $('.reg-success-msg').removeClass('hidden');    
                         // $('.reg-success-msg .mem-name').text( firstname );
-                        window.location = '/thank-you-registration?n='+firstname;
+                        // window.location = '/thank-you-registration?n='+firstname;
+                        window.location = 'https://www.triple0.com/advancedsearch.aspx?search=1';  
                         
                     }else{
                         // console.log(result.Error);
@@ -623,12 +624,23 @@
                                 $('#createPassword, #confirmPassword').val("");
     
                                 $('#createPassword').focus().removeClass().parent().find('.error-msg').removeClass('hidden');
-                            }else if( param.Name == "email" || param.Name == "username" ){
+                            }
+                            // else
+                            // {
+                            //     // window.location = '/thank-you-registration?n='+firstname;  
+                            //     window.location = 'https://www.triple0.com/advancedsearch.aspx?search=1';                              
+                            // }
+                            else if( param.Name == "email" || param.Name == "username" ){
+                                
                                 var errMsg = param.Message;
                                 if( errMsg.indexOf("already exists") >-1 ){
-                                    errMsg = "You already have an account with Triple0. Please reset your password if you cannot remember it.";
-                                    $('.email-error-msg').removeClass('hidden').find('small').html(errMsg);
-                                    $('#email').parent().addClass('hasError');
+
+                                    window.location = 'https://www.triple0.com/advancedsearch.aspx?search=1';  
+                                    // errMsg = "You already have an account with Triple0. Please reset your password if you cannot remember it.";
+                                    // $('.email-error-msg').removeClass('hidden').find('small').html(errMsg);
+                                    // $('#email').parent().addClass('hasError');
+
+
                                 }
                             }
                         });

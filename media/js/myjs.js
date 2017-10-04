@@ -16,6 +16,10 @@
         $('.top-bar-section > ul:not(.right)').addClass('left');
         $('.top-bar-section > ul > li').has('ul').addClass('has-dropdown');
         $('.top-bar-section > ul > li > ul').addClass('dropdown');
+        $(".search-result-send-email-link").text('Refer to Friend');
+        $(".search-result-save-job-link").text('Save Job');
+        
+        
         //$('.button, .mini-new-buttons, .jobdetail-top .backtoresults').addClass('button small radius');
         //$('.apply-now-link a').addClass('button radius');
         $('#side-left, #dynamic-side-left-container, #job-side-column').addClass('ef-sidebar large-3 small-12 columns');

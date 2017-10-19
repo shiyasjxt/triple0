@@ -216,13 +216,13 @@
         }
         if(currentURL.indexOf('international-doctors-australia')>-1){
             $(".landing-slogan").html('The team at <span>Triple0 always go the extra mile</span> to ensure relocating as a doctor from the UK or Ireland is as easy as possible.');
-            $(".landing-newsletter").find('p').html('No problem, sign up to our UK & Ireland doctors newsletter to keep informed about all the latest relocations news, tips and doctor opportunities.');
+            // $(".landing-newsletter").find('p').html('No problem, sign up to our UK & Ireland doctors newsletter to keep informed about all the latest relocations news, tips and doctor opportunities.');
             
         }
 
         if(currentURL.indexOf('international-doctors-new-zealand')>-1){
             $(".landing-slogan").html('The team at <span>Triple0 always go the extra mile</span> to ensure relocating as a doctor from the UK or Ireland is as easy as possible.');
-            $(".landing-newsletter").find('p').html('No problem, sign up to our UK & Ireland doctors newsletter to keep informed about all the latest relocations news, tips and doctor opportunities.');
+            // $(".landing-newsletter").find('p').html('No problem, sign up to our UK & Ireland doctors newsletter to keep informed about all the latest relocations news, tips and doctor opportunities.');
             
         }
 
